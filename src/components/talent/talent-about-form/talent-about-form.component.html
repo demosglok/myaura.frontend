@@ -1,0 +1,39 @@
+<div class="talent-about aura-form aura-dark">
+   <slot name="title"></slot>
+   <span class="aura-blue">Autofill information with your Facebook account or Chat with our Bot</span>
+   <span>We will autofill your profile picture, name and summary</span>
+   <div class="aura-field">
+      <sui-button class="facebook-btn" 
+                  content="Autofill" 
+                  icon="facebook f" 
+                  label-position="left"
+                  @click="autofillFb()"/>
+      <sui-button class="chartbot-btn" 
+                  content="Chat With the Bot" 
+                  icon="comment alternate outline" 
+                  label-position="left" />
+   </div>
+   <sui-divider horizontal>Or</sui-divider>
+   <div class="aura-field ui transparent input">
+      <span is="sui-header" float="left">Interests</span>
+      <input placeholder="Eg. Surfing, cooking, music" v-model="about.interests"/>
+   </div>
+   <sui-divider />
+   <div class="aura-field ui transparent input">
+      <span is="sui-header" float="left">Education</span>
+      <input v-model="about.education" placeholder="Eg. Master in HCI, Computer Science"/>
+   </div>
+   <sui-divider />
+   <div class="aura-field ui transparent input">
+      <span is="sui-header" float="left">Work Experience</span>
+      <input v-model="about.work_experience" placeholder="Eg. Coindesk, Bittrex"/>
+   </div>
+   <sui-divider />
+   <div class="aura-field ui transparent input">
+      <span is="sui-header" float="left">Attended Events</span>
+      <input v-model="about.attendent_events" placeholder="Eg. CES 2017, International Blockchain Submit"/>
+   </div>
+   <sui-divider />
+   <slot name="action-buttons"></slot>
+   <slot name="footer"></slot>
+</div>

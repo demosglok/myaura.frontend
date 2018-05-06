@@ -1,0 +1,33 @@
+<div class="skills-form aura-form aura-dark">
+      <slot name="title"></slot>
+      <span class="aura-blue">Autofill information with your LinkedIn and/or GitHub account</span>
+      <span>We will autofill your skill set</span>
+      <div class="aura-field">
+         <sui-button class="linkedin-btn" 
+                     content="Autofill" 
+                     icon="linkedin in" 
+                     label-position="left"
+                     @click="autofillLinkedin()" />
+         <sui-button class="github-btn" 
+                     content="Autofill" 
+                     icon="github alternate" 
+                     label-position="left" 
+                     @click="autofillGithub()" />
+      </div>
+      <sui-divider horizontal>Or</sui-divider>
+      
+      <div class="aura-field">
+         <sui-dropdown
+            placeholder="Search Skills (eg. Blockchain Development)"
+            icon="search"
+            search
+            selection
+         />
+      </div>
+      <sui-divider />
+      <div class="aura-field">
+         <span v-for="skillData in $store.getters.skills.hardskills" class="skill-label">{{skillData.skill}}</span>
+      </div>
+      <slot name="action-buttons"></slot>
+      <slot name="footer"></slot>
+   </div>

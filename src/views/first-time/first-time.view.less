@@ -1,0 +1,140 @@
+@import './../../styles/variables.less';
+
+.first-time {
+   min-height: 100vh;
+   display: flex;
+   .talent {
+      flex: 1;
+      background-color: @aura-mono-700;
+      display: flex;
+
+      .space {
+         flex: 1;
+      }
+
+      .content {
+         flex: 0 0 332px;
+         display: flex;
+         flex-direction: column;
+
+         .greeting {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            h1 {
+               font-size: 26px;
+               font-weight: bold;
+               line-height: 31px;
+               color: @aura-mono-0;
+               margin: 6px 0;
+            }
+            font-size: 16px;
+            line-height: 20px;
+            color: @aura-mono-200;
+         }
+         .bottom {
+            flex: 1;
+         }
+   
+         .talent-card {
+            width: 480px;
+            height: 332px;
+   
+            flex: 0 0 332px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+   
+            padding: 60px;
+   
+            background-color: @aura-mono-900;
+            border-radius: 4px 0 0 4px;
+            border: 1px solid #242835;
+
+            font-size: 14px;
+            line-height: 20px;
+            color: @aura-mono-200;
+
+            h1 {
+               font-size: 26px;
+               line-height: 31px;
+               color: @aura-mono-0;
+               font-weight: normal;
+               margin: 8px 0;
+            }
+
+            button {
+               background-color: @aura-blue;
+               height: 36px;
+               color: @aura-mono-0;
+               margin-top: 32px;
+               width: 100%;
+            }
+         }
+
+      }
+
+      
+   }
+   .company {
+      flex: 1;
+      background-color: @aura-mono-100;
+      
+      display: flex;
+
+      .space {
+         flex: 1;
+      }
+
+      .content {
+         flex: 0 0 332px;
+         
+         display: flex;
+         flex-direction: column;
+         .company-card {
+            width: 480px;
+            height: 332px;
+   
+            flex: 0 0 332px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+   
+            padding: 60px;
+
+            color: @aura-mono-500;
+   
+            background-color: @aura-mono-0;
+            border-radius: 0 4px 4px 0;
+
+            h1 {
+               font-size: 26px;
+               line-height: 31px;
+               font-weight: normal;
+               margin: 8px 0;
+            }
+
+            button {
+               background-color: @aura-green;
+               height: 36px;
+               margin-top: 32px;
+               width: 100%;
+               color: @aura-mono-0;
+            }
+         }
+         .bottom {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-end;
+         }
+         .top {
+            flex: 1;
+         }
+      }      
+   }
+}

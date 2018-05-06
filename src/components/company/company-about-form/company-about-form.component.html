@@ -1,0 +1,57 @@
+<div class="company-about-form aura-form aura-light">
+   <slot name="title"></slot>
+   <span class="aura-blue">Autofill information with our chat bot</span>
+   <span>We will autofill your company information</span>
+   <div class="aura-field">
+      <sui-button class="chartbot-btn" 
+                  content="Chat With the Bot" 
+                  icon="comment alternate outline" 
+                  label-position="left" />
+   </div>   
+   <sui-divider horizontal>Or</sui-divider>
+   <div class="aura-field">
+      <span is="sui-header" float="left">Why work for us?</span>
+      <div class="ui transparent input">
+         <textarea   maxlength="280"
+                     placeholder="Description (280 words)">
+         </textarea>
+      </div>
+   </div>
+   <sui-divider />
+   <div class="aura-field">
+      <span is="sui-header" float="left">What does your company do?</span>
+      <div class="ui transparent input">
+         <textarea   maxlength="280"
+                     placeholder="Description (280 words)">
+         </textarea>
+      </div>
+   </div>
+   <sui-divider />
+   <div class="aura-field">
+      <span is="sui-header" float="left">Video Link</span>
+      <sui-input placeholder="Link of your company video" transparent/>
+   </div>
+   <sui-divider />
+   <div class="aura-field">
+      <span is="sui-header" float="left">Website Link</span>
+      <sui-input placeholder="Link of your website" transparent/>
+   </div>
+   <sui-divider />
+   <div class="aura-field">
+      <span is="sui-header" float="left">Facebook Link</span>
+      <sui-input placeholder="Facebook page link" transparent/>
+   </div>
+   <sui-divider />
+   <div class="aura-field">
+      <span is="sui-header" float="left">LinkedIn Link</span>
+      <sui-input placeholder="LinkedIn profile link" transparent/>
+   </div>
+   <sui-divider />
+   <div class="aura-field">
+      <span is="sui-header" float="left">Twitter Link</span>
+      <sui-input placeholder="Twitter profile link" transparent/>
+   </div>
+   <sui-divider />
+   <slot name="action-buttons"></slot>
+   <slot name="footer"></slot>
+</div>

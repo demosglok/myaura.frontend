@@ -1,0 +1,61 @@
+<div class="talent-get-started">
+   <div class="image"><img src="./../../../assets/empty-profile-talent.svg" alt=""></div>
+   <div class="title">Complete Your Profile</div>
+   <p>Fill out your profile to get job matches, earn coins and start enjoing the blockchain live.</p>
+   <sui-button class="aura-blue large" content="Get Started!" @click="showModal"/>
+
+   <div  class="ui dimmer modals page transition visible active" style="display: flex !important;"
+         v-if="open"
+         @click="open=false">
+      <div class="ui active modal aura-dark" v-on:click.stop>
+         <div class="header">
+            STEP {{step}}/3
+            <div class="title">{{stepData[step].title}}</div>
+         </div>
+         <div class="scrolling content">
+            <general-form v-if="step == 1"></general-form>
+            <skills-form v-if="step == 2"></skills-form>
+            <about-form v-if="step == 3"></about-form>
+         </div>
+         <div class="actions">
+            <div class="action-buttons" slot="action-buttons">
+               <sui-button class="talent-secondary" @click="back">Back</sui-button>
+               <template v-if="step == 3">                  
+                  <sui-button class="talent-primary" @click="finish">Done!</sui-button>
+               </template>
+               <template v-else>
+                  <sui-button class="talent-primary" @click="next">Continue</sui-button>
+               </template>
+            </div>               
+            <div class="footer">      
+               <span>{{stepData[step].footer}}</span>
+               <button v-if="step < 3" class="link-btn" @click="skip">Skip</button>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <!-- <sui-modal v-model="open">
+         
+            <general-form v-if="step == 1">
+               <div class="action-buttons" slot="action-buttons">      
+                  <sui-button class="talent-secondary" @click="close">Cancel</sui-button>
+                  <sui-button class="talent-primary" @click="next">Continue</sui-button>
+               </div>               
+               <div class="footer">      
+                  <span>Worth 25 Coins if  filled, 150 if filled with LinkedIn</span>
+                  <button class="link-btn">Skip</button>
+               </div>
+            </general-form>
+            <skills-form v-if="step == 2">
+               <div class="action-buttons" slot="action-buttons">      
+                  <sui-button class="talent-secondary" @click="close">Cancel</sui-button>
+                  <sui-button class="talent-primary" @click="next">Continue</sui-button>
+               </div>               
+               <div class="footer" slot="footer">      
+                  <span>Worth 25 Coins if  filled, 150 if filled with LinkedIn</span>
+                  <button class="link-btn">Skip</button>
+               </div>
+            </skills-form>
+      </sui-modal> -->
+</div>

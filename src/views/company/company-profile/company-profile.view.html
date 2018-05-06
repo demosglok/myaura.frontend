@@ -1,0 +1,38 @@
+<div class="company-profile">
+   <ul class="profile-menu aura-light secondary menu">
+      <span class="menu-header">MENU</span>
+      <router-link to="/company/profile/personal" tag="li"><sui-icon name="user outline"/>Personal Info</router-link>
+      <router-link to="/company/profile/contacts" tag="li"><sui-icon name="sliders horizontal"/>Contact Preferences</router-link>
+      <router-link to="/company/profile/company" tag="li"><sui-icon name="info circle"/>Company Info</router-link>
+      <router-link to="/company/profile/about" tag="li"><sui-icon name="industry"/>About My Company</router-link>
+      <router-link to="/company/profile/tech-stack" tag="li"><sui-icon name="fire extinguisher"/>Tech Stack</router-link>
+   </ul>
+   <div class="profile-screen"><router-view/></div>
+   <div class="company-info">
+         <!-- https://scontent.fdnk2-1.fna.fbcdn.net/v/t1.0-9/15355657_1288157794587810_1156712225102894684_n.jpg?oh=4b8eff0cdc52b4fad4bb47ec91406379&oe=5B3CEAC7 -->
+      <div class="header">
+         <sui-image class="photo" avatar size="tiny" src="https://scontent.fdnk2-1.fna.fbcdn.net/v/t1.0-9/15355657_1288157794587810_1156712225102894684_n.jpg?oh=4b8eff0cdc52b4fad4bb47ec91406379&oe=5B3CEAC7" hidden />
+         <span class="company-name">Logan Nichols <p class="company-login">@logan</p></span>
+      </div>
+      <div class="balance">
+         <span>Balance <sui-button circular icon="plus circle"  size="tiny" /></span>
+         <span class="aura-blue">25 C</span>
+      </div>
+      <div class="score">
+         <span>Score <sui-button circular icon="info circle"  size="tiny" /></span>
+         <span class="aura-orange">188</span>
+      </div>
+      <div class="completion">
+         <span>Profile Completion <sui-button circular icon="info circle"  size="tiny" /></span>
+         <sui-progress class="aura-green" size="tiny" label="30%" percent="30"color="green"/>
+      </div>
+      <div class="company-link">
+         <span class="big">Company Profile Link</span>
+         <sui-input value="https://www.myaura.io/Arus" />
+         <div class="action-buttons">
+            <sui-button content="Copy Link" icon="external link alternate" />
+            <sui-button content="Preview Profile" icon="eye" />
+         </div>
+      </div>
+   </div>
+</div>

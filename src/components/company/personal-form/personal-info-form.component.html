@@ -1,0 +1,46 @@
+<div class="personal-info-form aura-form aura-light">
+   <slot name="title"></slot>
+   <span class="aura-blue">Autofill information with your LinkedIn account</span>
+   <span>We will autofill your profile picture, name, tittle and summary</span>
+   <div class="aura-field">
+         <sui-button class="linkedin-btn" 
+                     content="Autofill" 
+                     icon="linkedin in" 
+                     label-position="left" />
+   </div>   
+   <sui-divider horizontal>Or</sui-divider>
+   <div class="aura-field">
+      <span is="sui-header" float="left">Name</span>
+      <sui-input placeholder="Type your name" transparent/>
+   </div>
+   <sui-divider />
+   <div class="aura-field">
+      <span is="sui-header" float="left">Email</span>
+      <sui-input placeholder="Your Email Address" transparent/>
+   </div>
+   <sui-divider />
+   <div class="aura-field">
+      <span is="sui-header" float="left">Country</span>
+      <sui-dropdown
+         placeholder="Select Country"
+         search
+         selection
+      />
+   </div>
+   <sui-divider />
+   <div class="aura-field">
+      <span is="sui-header" float="left">Title</span>
+      <sui-input placeholder="Eg. Senior Phyton Developer" transparent/>
+   </div>
+   <sui-divider />
+   <div class="aura-field">
+      <span is="sui-header" float="left">Summary</span>
+      <div class="ui transparent input">
+         <textarea   maxlength="280"
+                     placeholder="Brief description of what you do (280 characters)">
+         </textarea>
+      </div>
+   </div>
+   <slot name="action-buttons"></slot>
+   <slot name="footer"></slot>
+</div>

@@ -1,0 +1,24 @@
+<div class="talent-menu">
+   <div class="container">
+      <div class="logo"></div>
+      <ul class="aura-dark horizontal menu">
+         <router-link to="/talent/job-stream" tag="li">Job Stream</router-link>
+         <router-link to="/talent/messages" tag="li">Messages</router-link>
+         <router-link to="/talent/my-jobs" tag="li">My Jobs</router-link>
+      </ul>
+      <sui-input  class="menu-search"
+                  placeholder="Find Talents"
+                  icon="search" icon-position="left"
+                  transparent/>
+      <div class="user-panel">
+            <sui-button class="notifications" circular icon="bell outline" size="big"/>            
+            <sui-button class="avatar" circular icon="file image outline" />
+            <sui-dropdown class="user-dropdown" :text="user.name">
+               <sui-dropdown-menu class="user-dropdown-menu">
+                  <router-link to="/talent/profile" tag="sui-dropdown-item"><sui-icon name="user outline"/>Profile</router-link>
+                  <sui-dropdown-item><sui-icon name="sign out alternate" />Log Out</sui-dropdown-item>
+               </sui-dropdown-menu>
+            </sui-dropdown>
+      </div>
+   </div>
+</div>

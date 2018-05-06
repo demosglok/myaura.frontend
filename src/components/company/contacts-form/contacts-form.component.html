@@ -1,0 +1,53 @@
+<div class="contacts-form aura-form aura-light">
+   <slot name="title"></slot>
+   <span class="aura-blue">Autofill information with our chat bot</span>
+   <span>We will autofill your contact preferences</span>
+   <div class="aura-field">
+      <sui-button class="chartbot-btn" 
+                  content="Chat With the Bot" 
+                  icon="comment alternate outline" 
+                  label-position="left" />
+   </div>   
+   <sui-divider horizontal>Or</sui-divider>
+   <span class="title">Preferred Contact Methods</span>
+   <span>You must choose at least one</span>
+   <div class="aura-field">
+      <span is="sui-header" float="left">Email</span>
+      <sui-input placeholder="Preferred contact email address" transparent/>
+   </div>
+   <sui-divider />
+   <div class="aura-field">
+      <span is="sui-header" float="left">Skype</span>
+      <sui-input placeholder="Your Skype ID" transparent/>
+   </div>
+   <sui-divider />
+   <div class="aura-field">
+      <span is="sui-header" float="left">Telegram</span>
+      <sui-input placeholder="Your Telegram user name" transparent/>
+   </div>
+   <sui-divider />
+   <div class="aura-field">
+      <span is="sui-header" float="left">Discord</span>
+      <sui-input placeholder="Discord server public link" transparent/>
+   </div>
+   <sui-divider />
+   <span class="title">Interview Format Preference</span>
+   <span>You must choose at least one</span>
+   <div class="aura-field">
+      <span is="sui-header" float="left">Face to Face</span>
+      <sui-checkbox toggle/>
+   </div>
+   <sui-divider />
+   <div class="aura-field">
+      <span is="sui-header" float="left">Video</span>
+      <sui-checkbox toggle/>
+   </div>
+   <sui-divider />
+   <div class="aura-field">
+      <span is="sui-header" float="left">Telephone</span>
+      <sui-checkbox toggle/>
+   </div>
+   <sui-divider />
+   <slot name="action-buttons"></slot>
+   <slot name="footer"></slot>
+</div>

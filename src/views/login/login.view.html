@@ -1,0 +1,26 @@
+<div class="register">
+      <div class="top"></div>
+      <div class="register-form">
+         <div class="content">
+            <h1>Log in</h1>
+            <div class="text">Connect you Facebook and Linkedin accounts and get your profile prepared!</div>
+            <sui-button class="facebook-btn" 
+                        content="Log in With Facebook" 
+                        icon="facebook f" 
+                        label-position="left"
+                        @click="loginFb()"/>
+            <sui-button class="linkedin-btn" 
+                        content="Log in With Linkedin" 
+                        icon="linkedin in" 
+                        label-position="left"
+                        @click="loginLinkedin()"/>
+         </div>
+         <div class="footer">
+            Don’t have an account? 
+            <router-link to="register">Register</router-link>
+         </div>
+      </div>
+      <div class="bottom">
+            <!-- <img src="./../../assets/aura-logo-white.svg" alt="">  -->
+         </div>
+   </div>

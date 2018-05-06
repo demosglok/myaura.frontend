@@ -1,0 +1,42 @@
+<div class="talent-profile">
+   <ul class="profile-menu aura-dark secondary menu">
+      <span class="menu-header">MENU</span>
+      <router-link to="/talent/profile/general" tag="li"><sui-icon name="user outline"/>General Info</router-link>
+      <router-link to="/talent/profile/skills" tag="li"><sui-icon name="fire extinguisher"/>Skill Set</router-link>
+      <router-link to="/talent/profile/about" tag="li"><sui-icon name="info circle"/>About Myself</router-link>
+   </ul>
+   <div class="profile-screen">      
+      <!-- <talent-get-started></talent-get-started> -->
+      <router-view/>
+   </div>
+   <div class="talent-info">
+      <div class="header">
+         <sui-image class="photo" avatar size="tiny" :src="user.photo" hidden />
+         <span class="talent-name">{{user.name}}<p class="talent-login">@{{user.username}}</p></span>
+      </div>
+      <div class="balance">
+         <span>Balance <sui-button circular icon="plus circle"  size="tiny" /></span>
+         <span class="big aura-blue">{{user.balance}} C</span>
+      </div>
+      <div class="score">
+         <span>Score <sui-button circular icon="info circle"  size="tiny" /></span>
+         <span class="big aura-orange">{{user.score}}</span>
+      </div>
+      <div class="completion">
+         <span>Profile Completion <sui-button circular icon="info circle"  size="tiny" /></span>
+         <sui-progress class="aura-green" size="tiny" :label="user.profile_completion + '%'" :percent="user.profile_completion"color="green"/>
+      </div>
+      <div class="availibility">
+         <span class="big">Availability</span>
+         <span class="available aura-green">Available: <sui-checkbox v-model="user.availability" toggle/></span> 
+      </div>
+      <div class="talent-link">
+         <span class="big">Profile Link</span>
+         <sui-input value="https://www.myaura.io/Arus" />
+         <div class="action-buttons">
+            <sui-button content="Copy Link" icon="external link alternate" />
+            <sui-button content="Preview Profile" icon="eye" />
+         </div>
+      </div>
+   </div>
+</div>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="90px" height="72px" viewBox="0 0 90 72" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>aura-logo-black</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="05_02_First-Time.-Bridge" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-1181.000000, -855.000000)" opacity="0.215806159">
+        <g id="aura-logo-black" transform="translate(1181.000000, 856.000000)">
+            <g id="Group-8" stroke="#212531">
+                <polygon id="Path-3" stroke-linejoin="round" points="0.911167614 7.06270224 47.9036977 25.1774336 60.8138497 16.2483804 17.1751432 0.514099202"></polygon>
+                <polygon id="Path-5" stroke-linejoin="round" points="25.6049813 53.8942084 71.5820706 70.2819439 47.766208 48.0079949 1.85363317 30.2190052"></polygon>
+                <path d="M47.7651504,47.9597709 L47.7651504,25.3546928" id="Line" stroke-linecap="round"></path>
+                <polygon id="Path-2" stroke-linejoin="round" points="1.74787185 29.9141562 25.5092673 53.8921059 71.4768381 70.2267557 88.5287355 65.6534953 84.1491593 42.1701367 60.7330745 16.1328795 17.1948412 0.492549533 0.888561132 7.11775902"></polygon>
+                <polygon id="Path-4" stroke-linejoin="round" points="88.7825626 65.4768931 47.7651504 25.2888612 60.8607813 16.233795 84.2602086 42.4150671"></polygon>
+            </g>
+            <text id="AURA" font-family="ArvilSans, Arvil" font-size="40" font-weight="normal" fill="#212531">
+                <tspan x="20.1123047" y="49.1418437">AURA</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

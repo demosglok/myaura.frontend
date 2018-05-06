@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="90px" height="72px" viewBox="0 0 90 72" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>aura-logo-white</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="02_01_Log-in" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-745.000000, -735.000000)" opacity="0.1">
+        <g id="aura-logo-white" transform="translate(745.500000, 726.070312)">
+            <g id="Assets/Logo-W" opacity="0.5" transform="translate(0.010742, 0.328125)" stroke="#FFFFFF">
+                <g id="Group-3" transform="translate(0.000000, 8.880566)">
+                    <polygon id="Path-3" stroke-linejoin="round" points="0.900425427 7.64185459 47.8929555 25.7565859 60.8031075 16.8275328 17.164401 1.09325155"></polygon>
+                    <polygon id="Path-5" stroke-linejoin="round" points="25.5942391 54.4733607 71.5713284 70.8610963 47.7554658 48.5871472 1.84289098 30.7981575"></polygon>
+                    <path d="M47.7544082,48.5389232 L47.7544082,25.9338451" id="Line" stroke-linecap="round"></path>
+                    <polygon id="Path-2" stroke-linejoin="round" points="1.73712966 30.4933085 25.4985251 54.4712583 71.4660959 70.8059081 88.5179933 66.2326476 84.1384171 42.7492891 60.7223323 16.7120318 17.1840991 1.07170188 0.877818945 7.69691137"></polygon>
+                    <polygon id="Path-4" stroke-linejoin="round" points="88.7718204 66.0560455 47.7544082 25.8680135 60.8500391 16.8129473 84.2494665 42.9942195"></polygon>
+                </g>
+            </g>
+            <text id="AURA" font-family="ArvilSans, Arvil" font-size="40" font-weight="normal" fill="#FFFFFF">
+                <tspan x="20.1123047" y="58.9296875">AURA</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

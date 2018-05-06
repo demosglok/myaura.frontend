@@ -1,0 +1,32 @@
+<div class="tech-stack-form aura-form aura-light">
+      <slot name="title"></slot>
+      <span class="aura-blue">Autofill information with your GitHub account or our chat bot</span>
+      <span>We will autofill your preferred technology usage</span>
+      <div class="aura-field">
+         <sui-button class="github-btn" 
+                     content="Autofill" 
+                     icon="github alternate" 
+                     label-position="left" />
+         <sui-button class="chartbot-btn" 
+                     content="Chat With the Bot" 
+                     icon="comment alternate outline" 
+                     label-position="left" />
+      </div>
+      <sui-divider horizontal>Or</sui-divider>
+      
+      <div class="aura-field">
+         <sui-dropdown
+            placeholder="Search techs (eg. Blockchain)"
+            icon="search"
+            search
+            selection
+         />
+      </div>
+      <sui-divider />
+      <div class="aura-field">
+         <span class="skill-label">Java</span>
+         <span class="skill-label">SQL</span>
+      </div>
+      <slot name="action-buttons"></slot>
+      <slot name="footer"></slot>
+   </div>

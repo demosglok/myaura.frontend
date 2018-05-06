@@ -1,0 +1,11 @@
+first-time:
+
+npm install vue -g
+
+npm install --global vue-cli
+
+to run server:
+
+npm i
+
+npm run serve

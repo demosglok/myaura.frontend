@@ -1,0 +1,16 @@
+@import './../../styles/variables';
+
+.talent {
+   background-color: @aura-mono-850;
+   .talent-screen {
+      margin: 0 auto;
+      width: @aura-screen-width;
+      min-height: calc(~"100vh - @{aura-talent-menu-height}");
+
+      input {
+         &:focus {
+            border-color: @aura-blue;
+         }
+      }
+   }
+}

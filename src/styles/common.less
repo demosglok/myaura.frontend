@@ -1,0 +1,408 @@
+@import './variables';
+
+body {
+   font-family: 'Proxima Nova';
+   font-size: 14px;
+}
+
+button.facebook-btn.ui.icon.left.labeled.button {
+   background-color: @fb-blue;
+   color: @aura-mono-0;
+   .icon {
+      background-color: @fb-label;
+      color: @aura-mono-0;
+      width: 36px;
+   }
+}
+
+button.linkedin-btn.ui.icon.left.labeled.button {
+   background-color: @linkedin-blue;
+   color: @aura-mono-0;
+   .icon {
+      background-color: @linkedin-label;
+      color: @aura-mono-0;
+      width: 36px;
+   }
+}
+
+ul.menu {
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+
+   font-size: 14px;
+   font-weight: 600;
+
+   li {
+      padding: 0 16px;
+
+      &:hover {
+         cursor: pointer;
+      }
+   }
+
+   &.horizontal li {
+      float: left;
+   }
+
+   &.secondary {
+      font-size: 16px;
+      &.aura-light {
+         color: @aura-mono-500;      
+         span.menu-header {
+            margin: 16px;
+            font-size: 12px;
+            font-weight: 600;
+            color: @aura-mono-300;
+         }
+         li {
+            color: @aura-mono-500;
+            border-radius: 4px;
+            &:hover, &.active {
+               color: @aura-mono-0;
+               background-color: @aura-green;
+               .icon {
+                  color: @aura-mono-0;
+               }
+            }
+            &:hover {
+               cursor: pointer;
+            }
+            .icon {
+               color: @aura-mono-400;
+            }
+         }
+      }  
+   }
+
+   &.secondary.aura-dark {
+      span.menu-header {
+         margin: 16px;
+         font-size: 12px;
+         font-weight: 600;
+         color: @aura-mono-300;
+      }
+      li {
+         color: @aura-mono-300;
+         border: none;
+         border-radius: 4px;
+         .icon {
+            color: @aura-mono-200;
+         }
+         &:hover {
+            background-color: @aura-blue;
+            color: @aura-mono-0;
+            .icon {
+               color: @aura-mono-0;
+            }
+         }
+      }
+   }
+      
+   &.aura-light li {
+      color: @aura-mono-300;
+      &:hover {
+         color: @aura-green;
+      }
+   }
+
+   &.aura-dark li {
+      color: @aura-mono-300;
+      &:hover {
+         color: @aura-blue;
+      }
+   }
+}
+
+.ui.toggle.checkbox input:checked~.box:before, .ui.toggle.checkbox input:checked~label:before {
+   background-color: @aura-green !important;
+}
+
+.aura-green {
+   color: @aura-green;
+}
+
+.aura-blue {
+   color: @aura-blue;
+}
+
+.aura-orange{
+   color: @aura-orange;
+}
+
+button.ui.button.talent-primary {
+   background-color: @aura-blue;
+   color: @aura-mono-0;
+   height: 46px;
+}
+
+button.ui.button.talent-secondary {
+   background-color: #3E4F6C;
+   color: @aura-mono-0;
+   height: 46px;
+}
+
+.aura-form {
+   padding: 32px;   
+   border-radius: 4px;
+
+   font-size: 14px;
+   line-height: 20px;
+
+   display: flex;
+   flex-direction: column;   
+
+   .title {
+      font-size: 26px;
+      line-height: 31px;
+      margin-bottom: 12px;
+   }
+
+   button.linkedin-btn, button.github-btn, button.facebook-btn {
+      margin: 24px 0;
+      margin-right: 12px;
+      width: 130px;
+   }
+
+   button.chartbot-btn {
+      margin: 24px 0;
+      margin-right: 12px;
+   }
+
+   .ui.divider {
+      color: @aura-mono-200;
+      text-transform: none;
+      font-size: 14px;
+      margin: 7px 0;
+   }
+   .ui.header {
+      color: @aura-mono-200;
+      font-size: 14px;
+      margin: 0;
+   }
+   .ui.input {
+      height: 36px;
+      input {
+         font-size: 14px;
+         height: 36px;
+      }
+   }
+   .ui.selection.dropdown {
+      background-color: unset;
+      border: none;
+      padding-left: 0;
+   }
+   .aura-field {
+      display: flex;
+      align-items: baseline;
+      .ui.input {
+         flex: 1;
+      }
+      .ui.selection.dropdown {
+         flex: 1;
+      }
+      .ui.header {
+         flex: 0 0 125px;
+      }     
+   }
+   textarea {
+      flex: 1;
+      background-color: unset;
+      border: none;
+      resize: none;
+   }
+   
+   
+   &.aura-dark {
+      background-color: @aura-mono-500;
+      color: @aura-mono-300;
+
+      .title {         
+         color: @aura-mono-0;
+      }
+
+      .ui.input input {
+         color: @aura-mono-200;
+      }
+      .ui.selection.dropdown {
+         color: @aura-mono-300;
+      }
+      textarea {
+         color: @aura-mono-300;
+         &:focus {
+            outline-color: @aura-mono-500;
+         }
+      }
+      .link-btn {
+         &:hover {            
+            color: @aura-blue;
+         }
+      }
+      
+   }
+
+   &.aura-light {
+      background-color: @aura-mono-0;
+      color: @aura-mono-500;
+      .ui.header {
+         color: @aura-mono-500;
+         font-weight: 600;
+      }
+      .title {         
+         color: @aura-mono-500;
+      }
+
+      .ui.divider {
+         color: @aura-mono-500;
+      }
+
+      .ui.input input {
+         color: @aura-mono-500;
+      }
+      .ui.selection.dropdown {
+         color: @aura-mono-500;
+      }
+      textarea {
+         color: @aura-mono-500;
+         &:focus {
+            outline-color: @aura-mono-0;
+         }
+      }
+      .link-btn {
+         &:hover {            
+            color: @aura-blue;
+         }
+      }
+      
+   }
+
+   .skill-label {
+      border-radius: 12px;
+      background-color: @aura-blue-primary-450;
+      color: @aura-mono-100;
+      font-size: 14px;
+      font-weight: 600;
+      padding: 2px 16px;
+      margin: 4px;
+   }
+}
+
+button.github-btn.ui.icon.left.labeled.button {
+   background-color: @github-grey;
+   color: @aura-mono-0;
+   .icon {
+      background-color: @github-label;
+      color: @aura-mono-0;
+      width: 36px;
+   }
+}
+
+button.chartbot-btn.ui.icon.left.labeled.button {
+   background-color: @chart-green;
+   color: @aura-mono-0;
+   .icon {
+      background-color: @chartbot-label;
+      color: @aura-mono-0;
+      width: 36px;
+   }
+}
+
+.ui.button.aura-blue {
+   background-color: @aura-blue;
+   color: @aura-mono-0;
+   &:hover {
+      background-color: darken(@aura-blue, 5);
+      color: @aura-mono-0;
+   }   
+}
+
+.ui.button.aura-green {
+   background-color: @aura-green;
+   color: @aura-mono-0;
+   &:hover {
+      background-color: darken(@aura-green, 5);
+      color: @aura-mono-0;
+   }
+}
+
+.ui.button.large {
+   height: 46px;
+   width: 100%;
+}
+
+.ui.active.modal {
+   width: 550px;
+   .footer {
+      // margin: 0 -32px -32px -32px;
+      padding: 0 32px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 60px;
+      border-radius: 0 0 4px 4px;
+   }
+   .header, .content, .actions {
+      margin: 0;
+      padding: 0;
+      border: none;
+   }
+
+   div.header {
+      padding: 32px 32px 0 32px;      
+      .title {
+         font-size: 26px;
+         line-height: 31px;
+         margin-bottom: 12px;
+      }
+   }
+
+   &.aura-dark {
+      .header, .content, .actions {
+         background-color: @aura-mono-500;
+         color: @aura-mono-300;
+      }
+      .header  {
+         font-size: 14px;
+         line-height: 20px;
+         .title {
+            color: @aura-mono-0;
+            margin: 0;
+         }
+      }
+      .footer {
+         border: 1px solid @aura-mono-450;
+         background-color: @aura-mono-800;
+         color: @aura-blue;
+         .link-btn {
+            color: @aura-mono-0;
+            &:hover {
+               background-color: unset;
+               cursor: pointer;
+            }
+         }
+      }
+   }
+   .action-buttons {
+      display: flex;
+      align-items: center;
+      margin-bottom: 36px;
+      padding: 0 36px;
+      button {
+         margin: 0;
+         flex: 1;
+         &:not(:last-child) {
+            margin-right: 18px;
+         }
+      }
+   }
+}
+
+
+.link-btn {
+   border: none;
+   background-color: unset;
+   &:hover {
+      background-color: unset;
+      cursor: pointer;
+   }
+}

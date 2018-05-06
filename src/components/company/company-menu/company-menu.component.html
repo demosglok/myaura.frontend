@@ -1,0 +1,23 @@
+<div class="company-menu">
+      <div class="container">
+         <div class="logo"></div>
+         <ul class="aura-light horizontal menu">
+            <router-link to="/company/posted-gobs" tag="li">Posted Jobs</router-link>
+            <router-link to="/company/messages" tag="li">Messages</router-link>
+         </ul>
+         <sui-input  class="menu-search"
+                     placeholder="Find Online Work"
+                     icon="search" icon-position="left"
+                     transparent/>
+         <div class="user-panel">
+               <sui-button class="notifications" circular icon="bell outline" size="big"/>            
+               <sui-button class="avatar" circular icon="file image outline" />
+               <sui-dropdown class="user-dropdown" text="Logan Nichols">
+                  <sui-dropdown-menu class="user-dropdown-menu">
+                     <router-link to="/company/profile" tag="sui-dropdown-item"><sui-icon name="user outline"/>Profile</router-link>
+                     <sui-dropdown-item><sui-icon name="sign out alternate" />Log Out</sui-dropdown-item>
+                  </sui-dropdown-menu>
+               </sui-dropdown>
+         </div>
+      </div>
+   </div>

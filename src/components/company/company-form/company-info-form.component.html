@@ -1,0 +1,61 @@
+<div class="company-info-form aura-form aura-light">
+   <slot name="title"></slot>
+   <span class="aura-blue">Autofill information with your LinkedIn account or our chat bot</span>
+   <span>We will autofill your company information</span>
+   <div class="aura-field">
+      <sui-button class="linkedin-btn" 
+                  content="Autofill" 
+                  icon="linkedin in" 
+                  label-position="left" />
+      <sui-button class="chartbot-btn" 
+                  content="Chat With the Bot" 
+                  icon="comment alternate outline" 
+                  label-position="left" />
+   </div>
+   <sui-divider horizontal>Or</sui-divider>
+   <div class="aura-field">
+      <span is="sui-header" float="left">Company Name</span>
+      <sui-input placeholder="Your company name" transparent/>
+   </div>
+   <sui-divider />
+   <div class="aura-field">
+      <span is="sui-header" float="left">Year Founded</span>
+      <sui-input placeholder="Eg. 1990" transparent/>
+   </div>
+   <sui-divider />
+   <div class="aura-field">
+      <span is="sui-header" float="left">Company Size</span>
+      <sui-dropdown
+         placeholder="Company Size"
+         search
+         selection
+      />
+   </div>
+   <sui-divider />
+   <span class="title">Headquarters</span>
+   <div class="aura-field">
+      <span is="sui-header" float="left">Country</span>
+      <sui-dropdown
+         placeholder="Select a Country"
+         search
+         selection
+      />
+   </div>
+   <sui-divider />
+   <div class="aura-field">
+      <span is="sui-header" float="left">City</span>
+      <sui-dropdown
+         placeholder="Select a City"
+         search
+         selection
+      />
+   </div>
+   <sui-divider />
+   <div class="aura-field">
+      <span is="sui-header" float="left">Zip Code</span>
+      <sui-input placeholder="Your company zip code" transparent/>
+   </div>
+   <sui-divider />
+   <slot name="action-buttons"></slot>
+   <slot name="footer"></slot>
+</div>
